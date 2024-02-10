@@ -13,7 +13,7 @@ The project is deployed using Vercel and is live at [TechSynergy](https://xeroco
 
 [![image](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)[![image]( 	https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
-I have chosen Next Js 14.1.0 as the frontend framework for our project and used Tailwind CSS to make up all the page's styles and components. I have used the popular testing framework Jest to test the website using several cases. Further, I sourced some two to three components from Next UI.
+I have chosen Next Js 14.1.0 as the frontend framework for our project and used Tailwind CSS to make up all the page's styles and components. The code language is Typescript & I have used the popular testing framework Jest to test the website using several cases. Further, I sourced some two to three components from Next UI.
 
 
 ## Design Approach ⚡️
@@ -28,14 +28,16 @@ I have chosen Next Js 14.1.0 as the frontend framework for our project and used 
 ## Testing 🛠️
 
 - A total of 23 Tests in 11 Test Suites have been written to comprehensively test the site using Jest 29.7.0.
-- Tests cover the display check of all the major contents & images in components, navbar and footer.
+- Tests cover the display checks of all the major contents & images in components, navbar and footer.
 - Interactive elements like button scroll, input fields & responsive behaviour have also been tested.
+- All the tests are in ```__tests__``` folder inside the root directory.
 
-<a href="https://drive.google.com/file/d/1qO9oN6Xmkr9HRkwedbfnSNgJYjtGceK7/view?usp=sharing"><img src="https://drive.google.com/file/d/1qO9oN6Xmkr9HRkwedbfnSNgJYjtGceK7/view?usp=sharing" style="width: 500px; max-width: 100%; height: auto" title="Comprehensive tests using jest" />
+
+<a href="https://drive.google.com/uc?export=view&id=1qO9oN6Xmkr9HRkwedbfnSNgJYjtGceK7"><img src="https://drive.google.com/uc?export=view&id=1qO9oN6Xmkr9HRkwedbfnSNgJYjtGceK7" style="width: 500px; max-width: 100%; height: auto" title="Comprehensive tests using jest" />
   
 ## Page Load Time ⏰
 
-<a href="https://drive.google.com/file/d/1RMl-8kDCfEEXGopy8RVMzSq_c4EtU3f-/view?usp=sharing"><img src="https://drive.google.com/file/d/1RMl-8kDCfEEXGopy8RVMzSq_c4EtU3f-/view?usp=sharing" style="width: 500px; max-width: 100%; height: auto" title="speed tests using lighthouse" />
+<a href="https://drive.google.com/uc?export=view&id=1RMl-8kDCfEEXGopy8RVMzSq_c4EtU3f-"><img src="https://drive.google.com/uc?export=view&id=1RMl-8kDCfEEXGopy8RVMzSq_c4EtU3f-" style="width: 500px; max-width: 100%; height: auto" title="speed tests using lighthouse" />
 
 I measured the load times of the website using Google Lighthouse. The performance ratings were good and the content load time ranged between 0.3s to 0.8s for the desktop.
 
@@ -48,9 +50,10 @@ Overall, I enjoyed the task. I found the task to be easy but time-consuming. Sti
 ## Final Words 😊
 
 Hope you would have liked my work and commitment. I would love to get the feedback and suggestions on my coding practices. Thank you.
-##
 
 Made with ❤️ & ⚡ by Yash Raj
+##
+
 
 ## Running on Local Machine
 
