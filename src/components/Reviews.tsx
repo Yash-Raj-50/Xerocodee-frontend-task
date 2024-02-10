@@ -34,7 +34,7 @@ const Reviews = () => {
 					<Image src={BlueVector} alt='Blue Vector' className='absolute top-[20%] lg:top-[30%] left-[20%] lg:left-[15%] w-20 h-16 lg:h-32 lg:w-32' />
 				</div>
 				<div className="flex flex-col h-fit items-center p-2 lg:p-8 lg:pt-12 lg:pb-20 lg:gap-10 h-96 text-center lg:text-start">
-					<div className="text-2xl lg:text-4xl p-4 px-12 text-black/700">We've stopped counting. Over 500 brands count on us.</div>
+					<div className="text-2xl lg:text-4xl p-4 px-12 text-black/700">We&apos;ve stopped counting. Over 500 brands count on us.</div>
 					<div className="lg:text-lg p-4 px-8 text-black/600">Our 4,000+ team has expertise in almost every programming language.</div>
 				</div>
 			</div>

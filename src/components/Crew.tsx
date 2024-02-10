@@ -14,7 +14,7 @@ const Crew = () => {
                     </div>
                 ))}
             </div>
-            <div className="text-3xl lg:text-5xl lg:mt-8 text-center">Let's Form Your Crew.</div>
+            <div className="text-3xl lg:text-5xl lg:mt-8 text-center">Let&apos;s Form Your Crew.</div>
             <div><Button className='text-white bg-[#3171DE] w-fit lg:py-6 px-6 text-lg ' radius="full">Schedule a Call</Button></div>
             <div className='hidden lg:block lg:absolute top-[20%] left-[10%] px-4 -z-10'><Image src={GreenVector} alt='Green Vector' className='lg:h-36 lg:w-36' /></div>
             <div className='hidden lg:block lg:absolute top-[15%] right-[10%] px-4 -z-10'><Image src={BlueVector} alt='Blue Vector' className='lg:h-36 lg:w-36' /></div>
