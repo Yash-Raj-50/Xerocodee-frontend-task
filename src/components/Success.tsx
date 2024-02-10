@@ -28,7 +28,7 @@ const Success = () => {
             <div className="text-3xl lg:text-5xl text-black/70 px-20 lg:px-0 max-w-5xl text-center leading-loose lg:leading-snug">Choose Us: Your Path to Innovation and <span className="bg-gradient-to-b from-[#3171DE] to-[#4AC0F2] text-transparent bg-clip-text">Success</span></div>
             <div className="flex max-w-full overflow-x-scroll gap-8 lg:gap-12 px-4 my-12 mb-8" ref={containerRef}>
                 {SuccessObejcts.map((content) => (
-                    <div key={content.id} className={`bg-white min-w-[350px] lg:min-w-[425px] lg:h-[250px] border flex flex-col items-center justify-around gap-4 p-6 lg:p-10 rounded-[36px] ${content.ExtraCSS}`}>
+                    <div key={content.id} className={`bg-white min-w-[350px] lg:min-w-[425px] lg:h-[250px] border flex flex-col items-center justify-around gap-4 p-6 lg:p-10 rounded-[36px] ${content.ExtraCSS} ${content.id===2?"bg-gradient-to-tr from-[#EDE14F] to-[#62AE6E]":""}`}>
                         <div className={`text-xl lg:text-2xl font-normal lg:font-medium ${content.ExtraCSS2} `} style={{ lineHeight: "2rem" }}>{content.Heading}</div>
                         <div className={`text-sm lg:text-lg font-light text-center lg:text-start ${content.ExtraCSS2}`}>{content.Text}</div>
                     </div>
