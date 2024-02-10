@@ -184,27 +184,27 @@ export const CrewMembers: CrewMember[] = [
     {
         id: 1,
         src: SoftwareDeveloper,
-        alt: "Crew Member"
+        alt: "SoftwareDeveloper"
     },
     {
         id: 2,
         src: QAEngineers,
-        alt: "Crew Member"
+        alt: "QAEngineers"
     },
     {
         id: 3,
         src: UX_Designer,
-        alt: "Crew Member"
+        alt: "UX_Designer"
     },
     {
         id: 4,
         src: DataScientist,
-        alt: "Crew Member"
+        alt: "DataScientist"
     },
     {
         id: 5,
         src: ProjectManager,
-        alt: "Crew Member"
+        alt: "ProjectManager"
     },
 ]
 

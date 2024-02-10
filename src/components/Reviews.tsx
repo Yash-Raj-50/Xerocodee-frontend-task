@@ -39,9 +39,9 @@ const Reviews = () => {
 				</div>
 			</div>
 			<div className='flex flex-col gap-16 lg:my-12 mb-0 relative'>
-				<div className='flex max-w-full overflow-x-scroll gap-8 lg:gap-12 pb-4 px-4 lg:px-0' ref={containerRef}>
+				<div className='flex max-w-full overflow-x-scroll gap-8 lg:gap-12 pb-4 px-4 lg:px-0' ref={containerRef} data-testid="reviews-container">
 					{MyReviews.map((review) => (
-						<div key={review.id} className='min-w-[340px] lg:min-w-[420px] lg:h-[550px] flex flex-col justify-between gap-4 p-8 border rounded-3xl shadow-lg bg-white z-10'>
+						<div key={review.id} data-testid={review.id} className='min-w-[340px] lg:min-w-[420px] lg:h-[550px] flex flex-col justify-between gap-4 p-8 border rounded-3xl shadow-lg bg-white z-10'>
 							<div className='flex flex-col items-center gap-8'>
 								<div className='w-full' ><Image src={review.Stars} alt='Stars'/></div>
 								<div className='text-lg lg:text-2xl font-semibold text-black/70' style={{lineHeight:1.5}}>{review.Heading}</div>
@@ -59,10 +59,10 @@ const Reviews = () => {
 					))}
 				</div>
 				<div className="flex justify-center gap-4">
-					<button className="bg-[#F7F7FD] p-2 lg:p-4 rounded-full cursor-pointer" onClick={() => handleScroll(-200)}>
+					<button className="bg-[#F7F7FD] p-2 lg:p-4 rounded-full cursor-pointer" name="left-arrow-button" onClick={() => handleScroll(-200)}>
 						<Image src={Left_Arrow} alt="Left Arrow" />
 					</button>
-					<button className="bg-[#F7F7FD] p-2 lg:p-4 rounded-full cursor-pointer" onClick={() => handleScroll(200)}>
+					<button className="bg-[#F7F7FD] p-2 lg:p-4 rounded-full cursor-pointer" name="right-arrow-button" onClick={() => handleScroll(200)}>
 						<Image src={Right_Arrow} alt="Right Arrow" />
 					</button>
 				</div>

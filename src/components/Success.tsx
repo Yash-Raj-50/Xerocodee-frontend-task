@@ -26,19 +26,19 @@ const Success = () => {
     return (
         <div className="bg-[#F7F7FD] flex flex-col items-center py-20 lg:py-12 rounded-3xl relative mx-6 lg:mx-0">
             <div className="text-3xl lg:text-5xl text-black/70 px-20 lg:px-0 max-w-5xl text-center leading-loose lg:leading-snug">Choose Us: Your Path to Innovation and <span className="bg-gradient-to-b from-[#3171DE] to-[#4AC0F2] text-transparent bg-clip-text">Success</span></div>
-            <div className="flex max-w-full overflow-x-scroll gap-8 lg:gap-12 px-4 my-12 mb-8" ref={containerRef}>
+            <div className="flex max-w-full overflow-x-scroll gap-8 lg:gap-12 px-4 my-12 mb-8" ref={containerRef} data-testid="success-container">
                 {SuccessObejcts.map((content) => (
-                    <div key={content.id} className={`bg-white min-w-[350px] lg:min-w-[425px] lg:h-[250px] border flex flex-col items-center justify-around gap-4 p-6 lg:p-10 rounded-[36px] ${content.ExtraCSS} ${content.id===2?"bg-gradient-to-tr from-[#EDE14F] to-[#62AE6E]":""}`}>
+                    <div key={content.id} data-testid={content.id} className={`bg-white min-w-[350px] lg:min-w-[425px] lg:h-[250px] border flex flex-col items-center justify-around gap-4 p-6 lg:p-10 rounded-[36px] ${content.ExtraCSS} ${content.id===2?"bg-gradient-to-tr from-[#EDE14F] to-[#62AE6E]":""}`}>
                         <div className={`text-xl lg:text-2xl font-normal lg:font-medium ${content.ExtraCSS2} `} style={{ lineHeight: "2rem" }}>{content.Heading}</div>
                         <div className={`text-sm lg:text-lg font-light text-center lg:text-start ${content.ExtraCSS2}`}>{content.Text}</div>
                     </div>
                 ))}
             </div>
             <div className="flex justify-center gap-4 lg:mb-8">
-                <button className="bg-white p-2 lg:p-4 rounded-full cursor-pointer" onClick={() => handleScroll(-200)}>
+                <button className="bg-white p-2 lg:p-4 rounded-full cursor-pointer" onClick={() => handleScroll(-200)} data-testid="left-arrow-button">
                     <Image src={Left_Arrow} alt="Left Arrow" />
                 </button>
-                <button className="bg-white p-2 lg:p-4 rounded-full cursor-pointer" onClick={() => handleScroll(200)}>
+                <button className="bg-white p-2 lg:p-4 rounded-full cursor-pointer" onClick={() => handleScroll(200)} data-testid="right-arrow-button">
                     <Image src={Right_Arrow} alt="Right Arrow" />
                 </button>
             </div>
